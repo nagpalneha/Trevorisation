@@ -1,0 +1,270 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Inspec.Ideas.Trevorisation
+</name>
+</assembly>
+<members>
+<member name="T:Inspec.Ideas.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Inspec.Ideas.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Inspec.Ideas.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.OrganisationSplit">
+ <summary>
+ This class is used to split a raw string in Organisation Information.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.OrganisationSplitData">
+ <summary>
+ OrganisationSplitData.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.OrganisationSplitData.Load(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="filename"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.OrganisationSplitData.LoadFromTables">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.OrganisationSplitData.LoadTable(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.PersonSplit">
+ <summary>
+ Person Split Class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.PersonSplit.Person">
+ <summary>
+ Person Structure.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.SplitPerson(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="rawData"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.EditName02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.Honours02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.Titles02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.RotateName02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.IsNameOriental02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.DecapName02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.InitializeName02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.AddBackTitles02(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.LoadNameTables02">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.ExtractDelimitedText(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sText"></param>
+ <param name="sStartDelim"></param>
+ <param name="sEndDelim"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.LoseDelimitedText(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sText"></param>
+ <param name="sStartDelim"></param>
+ <param name="sEndDelim"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.LoseNumerals(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sText"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.PersonSplit.LoseUnwantedSpaces(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sText"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.Stemmer">
+ <summary>
+ Class Stemmer.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.#ctor">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.#ctor(Inspec.Ideas.Trevorisation.Stemmer.StemmerMode)">
+ <summary>
+ 
+ </summary>
+ <param name="mode"></param>
+ <remarks></remarks>
+</member>
+<member name="P:Inspec.Ideas.Trevorisation.Stemmer.Mode">
+ <summary>
+ Mode.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.GetStem(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="term"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer">
+ <summary>
+ Porter Stemmer Class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer.#ctor">
+ <summary>
+ New Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer.Enhanced">
+ <summary>
+ 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer.stemTerm(System.String)">
+ <summary>
+ Implementation of the .NET interface - added as part of release 4 (Leif)
+ </summary>
+ <param name="s"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer.setTerm(System.String)">
+ <summary>
+SetTerm and GetTerm have been simply added to ease the
+ interface with other lanaguages. They replace the add functions
+ and toString function. This was done because the original functions stored
+all stemmed words (and each time a new woprd was added, the buffer would be
+re-copied each time, making it quite slow). Now, The class interface
+ that is provided simply accepts a term and returns its stem,
+ instead of storing all stemmed words.(Leif)
+ </summary>
+ <param name="s"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Inspec.Ideas.Trevorisation.Stemmer.PorterStemmer.getTerm">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
