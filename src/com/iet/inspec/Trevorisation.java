@@ -15,8 +15,36 @@ public class Trevorisation {
 
 		Bridge.LoadAndRegisterAssemblyFrom(new File(
 				"Inspec.Ideas.Trevorisation.j4n.dll"));
+		Person personDetails = personSplit();
+
+	}
+
+	private static Person personSplit() {
 		ValueType result = inspec.ideas.trevorisation.PersonSplit
 				.SplitPerson("Neha middle1 middle2 Nagpal NickName Ms. Suffix false Email@gmail.com StdFormat");
+		Person personDetails = new Person();
+		personDetails.setRawData(result.GetType().GetField("RawData")
+				.GetValue(result).ToString());
+		personDetails.setFirstName(result.GetType().GetField("FirstName")
+				.GetValue(result).ToString());
+		personDetails.setMiddleName1(result.GetType().GetField("MiddleName1")
+				.GetValue(result).ToString());
+		personDetails.setMiddleName2(result.GetType().GetField("MiddleName2")
+				.GetValue(result).ToString());
+		personDetails.setFamilyName(result.GetType().GetField("FamilyName")
+				.GetValue(result).ToString());
+		personDetails.setNickName(result.GetType().GetField("NickName")
+				.GetValue(result).ToString());
+		personDetails.setPrefix(result.GetType().GetField("Prefix")
+				.GetValue(result).ToString());
+		personDetails.setSuffix(result.GetType().GetField("Suffix")
+				.GetValue(result).ToString());
+		personDetails.setReverseOrder(Boolean.parseBoolean((result.GetType().GetField("ReverseOrder")
+				.GetValue(result).toString())));
+		personDetails.setEmail(result.GetType().GetField("Email")
+				.GetValue(result).ToString());
+		personDetails.setStdFormat(result.GetType().GetField("StdFormat")
+				.GetValue(result).ToString());
 
 		System.out.println("RawData : "
 				+ result.GetType().GetField("RawData").GetValue(result));
@@ -40,6 +68,7 @@ public class Trevorisation {
 				+ result.GetType().GetField("Email").GetValue(result));
 		System.out.println("StdFormat : "
 				+ result.GetType().GetField("StdFormat").GetValue(result));
-
+		return personDetails;
 	}
+
 }
